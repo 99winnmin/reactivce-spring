@@ -53,6 +53,25 @@ Non-blocking
     - 원래 스레드로 반환할 수 도 있고 아예 다른 스레드로 반환도 가능
 
 ## 3. CompletableFuture
+#### CompletableFuture 란? [ Future 와 CompletionStage 를 구현한 클래스 ]
+- Future
+  - 비동기적인 작업을 수행
+  - 해당 작업이 완료되면 결과를 반환하는 인터페이스
+- CompletionStage
+  - 비동기적인 작업을 수행
+  - 해당 작업이 완료되면 결과를 처리하거나 다른 CompletionStage 를 연결하는 인터페이스
+
+```
+ExecutorService
+- 쓰레드 풀을 이용하여 비동기적으로 작업을 실행하고 관리
+- 별도의 쓰레드를 생성하고 관리하지 않아도 되므로, 코드를 간결하게 유지 가능
+- 쓰레드 풀을 이용하여 자원을 효율적으로 관리
+```
+
+Future 인터페이스의 한계
+1. cancel 을 제외하고 외부에서 future를 컨트롤할 수 없음
+2. 반환된 결과를 get()해서 접근하기 때문에 비동기 처리가 어려움
+3. 완료되거나 에러가 발생했는지 구분하기 어려움
 
 ## 4. Reactive Streams
 

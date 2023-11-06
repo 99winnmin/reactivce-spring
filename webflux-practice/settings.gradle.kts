@@ -20,3 +20,5 @@ rootProject.name = "webflux-practice"
 include("practice:completable-future")
 include("practice:completable-future")
 findProject(":practice:completable-future")?.name = "completable-future"
+include("practice:reactive-streams")
+findProject(":practice:reactive-streams")?.name = "reactive-streams"

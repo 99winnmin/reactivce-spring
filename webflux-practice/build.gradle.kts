@@ -41,6 +41,7 @@ val nonSpringProjects = listOf(
 //    "examples:kotlin-coroutine",
 //    "examples:kotlin-coroutine",
     "practice:completable-future",
+    "practice:reactive-streams",
 ).map { project(it) }
 
 configure(nonSpringProjects) {

@@ -54,4 +54,15 @@ public class Helper {
     });
   }
 
+  public static CompletableFuture<Integer> waitAndReturn(int time, int value) {
+    return CompletableFuture.supplyAsync(() -> {
+      try {
+        Thread.sleep(time);
+      } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+      }
+      return value;
+    });
+  }
+
 }

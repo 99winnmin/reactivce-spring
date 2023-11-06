@@ -32,4 +32,26 @@ public class Helper {
     });
   }
 
+  public static CompletionStage<Integer> addOne(int value) {
+    return CompletableFuture.supplyAsync(() -> {
+      try {
+        Thread.sleep(3000);
+      } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+      }
+      return value + 1;
+    });
+  }
+
+  public static CompletionStage<String> addPrefix(int value) {
+    return CompletableFuture.supplyAsync(() -> {
+      try {
+        Thread.sleep(3000);
+      } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+      }
+      return "result: " + value;
+    });
+  }
+
 }

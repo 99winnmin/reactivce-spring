@@ -4,7 +4,9 @@ import kotlinx.coroutines.*
 
 suspend fun main(): Unit {
 //    cannotStop()
-    forcingStop()
+//    forcingStop()
+//    trackJobIsActive()
+    catchingException()
 }
 
 suspend fun cannotStop(): Unit = coroutineScope {

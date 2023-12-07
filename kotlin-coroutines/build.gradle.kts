@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.2")
+    implementation("io.projectreactor:reactor-core:3.4.12")
     testImplementation(kotlin("test"))
 }
 

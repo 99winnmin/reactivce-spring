@@ -1,0 +1,6 @@
+InputStream
+- Closable 구현. 명시적으로 close 하거나 try-with-resources 문 사용
+- read : stream 으로 데이터를 읽고 읽은 값은 반환, -1 이라면 끝에 도달했다는 것을 의미
+- close : stream 을 닫고 더 이상 데이터를 읽지 않는다
+- 어떤 source 로부터 데이터 읽을지에 따라 다양한 구현체 존재
+- FileInputStream, ByteArrayInputStream, FilterInputStream, ObjectInputStream, PipedInputStream, SequenceInputStream, StringBufferInputStream 등

@@ -1,0 +1,7 @@
+Mono 와 Flux
+- Mono<T> 는 Optional<T> 와 유사함
+- 없거나 혹은 하나의 값
+- Mono<Void> 로 특정 사건이 완료되는 시점을 가리킬 수 있음
+
+- Flux<T> 는 List<T> 와 유사함
+- 0~N 개의 값

@@ -1,0 +1,36 @@
+Rxjava
+
+Flowable
+- 0~N개의 데이터를 전달할 수 있음
+- 에러가 발생하면 error signal 전달하고 종료
+- 데이터를 모두 전달하면 complete signal 전달하고 종료
+- backPressure 지원
+- reactor 의 Flux 와 유사
+
+Observable
+- 0~N개의 데이터를 전달할 수 있음
+- 에러가 발생하면 error signal 전달하고 종료
+- 데이터를 모두 전달하면 complete signal 전달하고 종료
+- backPressure 미지원
+  - 값이 있으면 밀어넣음
+
+Flowable vs Observable
+pull 기반 || push 기반 (값을 댕겨오느냐 값을 밀어넣느냐)
+Subscriber 가 request 수 조절 || 처리할 수 없어도 전달
+message driven 모두 준수 || 일부 준수
+onSubscribe() 로 Subscription 전달 || onSubscribe() 로 Disposable 전달
+
+Single
+- 1개의 데이터를 전달할 수 있음 ( 1 or Error )
+- 1개의 item이 없다면 onError signal 전달
+- 에러가 발생했다면 onError signal 전달
+
+Maybe
+- 1개의 item을 전달 후 바로 onComplete signal 전달
+- 1개의 item이 없어도 onComplete signal 전달
+- 에러가 발생했다면 onError signal 전달
+- Reactor의 Mono 와 유사
+
+Completable
+- onComplete 혹은 onError signal 만 전달
+- 값이 아닌 사건을 전달

@@ -1,6 +1,5 @@
-package com.example.nio;
+package com.example.nio.inputstream;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

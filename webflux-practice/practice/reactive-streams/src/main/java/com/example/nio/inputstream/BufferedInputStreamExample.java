@@ -1,4 +1,4 @@
-package com.example.nio;
+package com.example.nio.inputstream;
 
 import java.io.BufferedInputStream;
 import java.io.File;

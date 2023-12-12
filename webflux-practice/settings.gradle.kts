@@ -22,3 +22,5 @@ include("practice:completable-future")
 findProject(":practice:completable-future")?.name = "completable-future"
 include("practice:reactive-streams")
 findProject(":practice:reactive-streams")?.name = "reactive-streams"
+include("practice:spring-webflux")
+findProject(":practice:spring-webflux")?.name = "spring-webflux"

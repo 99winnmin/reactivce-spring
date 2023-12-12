@@ -42,6 +42,7 @@ val nonSpringProjects = listOf(
 //    "examples:kotlin-coroutine",
     "practice:completable-future",
     "practice:reactive-streams",
+    "practice:spring-webflux",
 ).map { project(it) }
 
 configure(nonSpringProjects) {

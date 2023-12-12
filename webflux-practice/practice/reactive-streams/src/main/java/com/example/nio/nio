@@ -1,3 +1,4 @@
+## Java IO
 InputStream
 - Closable 구현. 명시적으로 close 하거나 try-with-resources 문 사용
 - read : stream 으로 데이터를 읽고 읽은 값은 반환, -1 이라면 끝에 도달했다는 것을 의미
@@ -23,3 +24,20 @@ Java IO 의 한계
   - hw 에서 값을 읽어오면 disk controller가 DMA 를 통해서 커널 버퍼에 값을 복사
   - 커널 버퍼에서 jvm 버퍼로 복사
   - jvm 버퍼, jvm 메모리에 있기 때문에 gc 대상이 되고 이는 cpu 자원을 소모
+
+## NIO
+- Java 1.4 에서 추가된 non-blocking I/O
+- IO 의 한계를 극복하기 위해 등장
+- 파일과 네트워크에 데이터를 읽고 쓸 수 있는 api 제공
+- buffer 기반
+- selector, channel 도입으로 높은 성능 보장
+
+Channel 과 Buffer
+- 데이터를 읽을 때 : 적절한 크기의 buffer 를 생성하고 channel의 read() 메서드를 사용하여 데이터를 buffer에 저장
+- 데이터를 쓸 때 : 먼저 buffer에 데이터를 저장하고 channel의 write() 메서드를 사용하여 목적지로 전송
+
+Buffer 위치 속성
+- capacity : 버퍼가 저장할 수 있는 데이터의 최대 크기
+- position : 버퍼에서 현재 위치를 가리킴
+- limit : 버퍼에서 데이터를 읽거나 쓸 수 있는 마지막 위치
+- mark : position 을 저장해두는 임시 위치

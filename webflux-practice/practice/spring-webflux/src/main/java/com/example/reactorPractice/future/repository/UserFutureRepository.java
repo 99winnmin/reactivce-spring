@@ -1,6 +1,6 @@
 package com.example.reactorPractice.future.repository;
 
-import com.example.common.repository.UserEntity;
+import com.example.reactorPractice.common.repository.UserEntity;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;

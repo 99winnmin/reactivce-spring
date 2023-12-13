@@ -1,6 +1,6 @@
 package com.example.reactorPractice.future.repository;
 
-import com.example.common.repository.ArticleEntity;
+import com.example.reactorPractice.common.repository.ArticleEntity;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;

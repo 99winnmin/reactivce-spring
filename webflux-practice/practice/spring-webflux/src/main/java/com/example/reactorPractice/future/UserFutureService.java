@@ -1,13 +1,13 @@
 package com.example.reactorPractice.future;
 
-import com.example.common.Article;
-import com.example.common.Image;
-import com.example.common.User;
-import com.example.common.repository.UserEntity;
-import com.example.future.repository.ArticleFutureRepository;
-import com.example.future.repository.FollowFutureRepository;
-import com.example.future.repository.ImageFutureRepository;
-import com.example.future.repository.UserFutureRepository;
+import com.example.reactorPractice.common.Article;
+import com.example.reactorPractice.common.Image;
+import com.example.reactorPractice.common.User;
+import com.example.reactorPractice.common.repository.UserEntity;
+import com.example.reactorPractice.future.repository.ArticleFutureRepository;
+import com.example.reactorPractice.future.repository.FollowFutureRepository;
+import com.example.reactorPractice.future.repository.ImageFutureRepository;
+import com.example.reactorPractice.future.repository.UserFutureRepository;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
